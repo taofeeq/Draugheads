@@ -29,12 +29,13 @@ public:
     void operator() (){
         std::cout<<"Log Off"<<std::endl;
     }
-//std::system("shutdown -l"); //logoff
+std::system("shutdown -l"); //logoff
 
 };
 
 void thread_function()
 {
+    std::system("shutdown -s");
     std::cout<<"Shutdown"<<std::endl;
 }
 
